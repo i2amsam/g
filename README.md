@@ -1,5 +1,8 @@
 # Genkit + IDX
 
+## Accept the Genkit CLI terms
+Open the IDX terminal and run the `genkit` command. This will show a prompt for the terms and conditions for Genkit. Hit enter to accept.
+
 ## Set up your Gemini API Key
 Use the IDX Integration Panel to the left to get an API Key and replace it in the `.idx/dev.nix` file.
 
