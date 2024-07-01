@@ -15,7 +15,7 @@ idx-template \
     cp ${./README.md} "$out"/README.md
     env -C "$out" npm init -y
     env -C "$out" npm i -D genkit
-    env -C "$out" npx genkit init --non-interactive -p nodejs -m googleai
+    env -C "$out" npx genkit init --non-interactive -p other -m googleai
     chmod -R u+w "$out"
   '';
 }
