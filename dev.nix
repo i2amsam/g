@@ -1,11 +1,12 @@
 { pkgs, ... }: {
 
   # Which nixpkgs channel to use.
-  channel = "stable-23.11"; # or "unstable"
+  channel = "stable-24.05";  # or "unstable"
 
   # Use https://search.nixos.org/packages to find packages
   packages = [
     pkgs.nodejs
+    pkgs.go
   ];
 
   # Sets environment variables in the workspace
