@@ -1,8 +1,5 @@
 # Genkit + IDX
 
-## Accept the Genkit CLI terms
-Open the IDX terminal and run the `genkit` command. This will show a prompt for the terms and conditions for Genkit. Hit enter to accept.
-
 ## Set up your Gemini API Key
 Use the IDX Integration Panel to the left to get an API Key and replace it in the `.idx/dev.nix` file.
 
@@ -14,25 +11,7 @@ Use the IDX Integration Panel to the left to get an API Key and replace it in th
   };
 ```
 
-## Set up the IDX Preview Panel
+## Start the Genkit Developer UI
+Open the IDX terminal and run `genkit start` command. This will start he Genkit Develoepr UI running on http://localhost:4000 
 
-Near the bottom of `.idx/dev.nix` add the preview panel configuration below and rebuild the environment.
-
-```nix
-  idx.previews = {
-    enable = true;
-    previews = [
-      {
-        command = [
-          "npx"
-          "genkit"
-          "start"
-          "--port"
-          "$PORT"
-        ];
-        manager = "web";
-        id = "web";
-      }
-    ];
-  };
-```
+Use Cmd-click (Ctrl+click on Windows) to open that line in your default browser
